@@ -23,10 +23,7 @@
 
   <br/>
   <br/>
----
 
-
----
 
 <h4 align="center">Face Detection - img_FR_HOG 🚀</h4>
 
@@ -47,8 +44,48 @@
 
   <br/>
   <br/>
+
+
+<h4 align="center">Face Detection - img_project_fr_realtime 🚀</h4>
+
+<div align="center">
+    <table>
+        <tr>
+            <td style="width: 50%; text-align: center;">
+                <img src="img_Facial_recognition/img_project_fr_realtime/01_list_encoders.png" style="width: 90%;" alt="01_list_encoders">
+                <p style="margin-top: 5px;"> img_project_fr_realtime - 01_list_encoders </p>
+            </td>
+            <td style="width: 50%; text-align: center;">
+                <img src="img_Facial_recognition/img_project_fr_realtime/1_test_finsh_project_fr_realtime.png" style="width: 90%;"      alt="1_test_finsh_project_fr_realtime">
+                <p style="margin-top: 5px;"> img_project_fr_realtime - img_FR_HOG - 1_test_finsh_project_fr_realtime </p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+  <br/>
+  <br/>
 ---
 
+<h4 align="center">Face Detection - img_project_fr_realtime 🚀</h4>
+
+<div align="center">
+    <table>
+        <tr>
+            <td style="width: 50%; text-align: center;">
+                <img src="img_Facial_recognition/img_project_fr_realtime/2_nome_sem_extensao.png" style="width: 90%;" alt="2_nome_sem_extensao">
+                <p style="margin-top: 5px;">img_project_fr_realtime - 2_nome_sem_extensao </p>
+            </td>
+            <td style="width: 50%; text-align: center;">
+                <img src="img_Facial_recognition/img_project_fr_realtime/2_test_finsh_project_fr_realtime.png" style="width: 90%;" alt="2_test_finsh_project_fr_realtime">
+                <p style="margin-top: 5px;">img_project_fr_realtime - 2_test_finsh_project_fr_realtime</p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+  <br/>
+  <br/>
 
 
 #### 🚀 Features
@@ -75,26 +112,29 @@
 
 #### 🖥️ Installation Guide
 
-Clone the repository:
+##### Clone the repository:
 
-bash
-Copiar código
-git clone https://github.com/your-repository/face-recognition-realtime.git
-cd face-recognition-realtime
-Install the required dependencies:
+
+ - git clone https://github.com/ludiemert/Facial_recognition_HOG
+
+
+ - cd face-recognition-realtime
+ - Install the required dependencies:
 
 Make sure you have Python 3.7+ installed, then run the following command to install the necessary libraries:
 
-bash
-Copiar código
+```python
 pip install opencv-python face-recognition
-Prepare the Pessoas directory:
+```
 
-Create a folder named Pessoas in the project root directory.
-Add images of people to the folder. The filenames should be the name of the person (e.g., John.jpg, Elon.jpg).
-📂 Directory Structure
-bash
-Copiar código
+#### Prepare the Pessoas directory:
+
+ - Create a folder named Pessoas in the project root directory.
+ - Add images of people to the folder. The filenames should be the name of the person (e.g., John.jpg, Elon.jpg).
+
+#### 📂 Directory Structure
+
+```python
 face-recognition-realtime/
 ├── main.py               # Main Python file for the project
 ├── Pessoas/              # Folder containing images for encoding
@@ -102,20 +142,24 @@ face-recognition-realtime/
 │   ├── Elon.jpg
 │   └── ...
 └── README.md             # Project documentation
-▶️ How to Run
-Run the script:
+```
 
-bash
-Copiar código
+#### ▶️ How to Run
+
+ - Run the script:
+```python
 python main.py
-Allow access to your webcam. The script will:
+```
+ - Allow access to your webcam. The script will:
 
-Resize the live video feed for performance optimization.
+ - Resize the live video feed for performance optimization.
 Detect faces in real-time.
 Compare webcam faces with pre-encoded faces from the Pessoas folder.
 Display the name of the recognized person and draw a bounding box around their face.
 Press q to exit the program.
-📝 Code Overview
+
+#### 📝 Code Overview
+
 1. Encoder Creation (criarEncoders)
 This function iterates through all images in the Pessoas folder.
 It converts each image to RGB format, as required by the face_recognition library.
@@ -125,7 +169,8 @@ Captures the live video feed from the webcam using OpenCV.
 Detects faces in each frame, resizing the video for performance.
 Compares the live face encodings with pre-encoded faces from the Pessoas folder.
 Displays the name and draws a bounding box around the face on the live feed.
-🔧 Customization
+
+#### 🔧 Customization
 Tolerance Adjustment:
 Adjust the tolerance parameter in the fr.compare_faces function to fine-tune face matching sensitivity.
 
@@ -135,7 +180,7 @@ Add more images to the Pessoas folder to increase the recognition database.
 Performance Optimization:
 Modify the frame resizing parameters for a balance between speed and accuracy in face detection.
 
-🛡️ Limitations and Recommendations
+#### 🛡️ Limitations and Recommendations
 Lighting Conditions:
 The recognition performance may vary under poor lighting or when faces are at extreme angles.
 
@@ -145,7 +190,7 @@ Larger datasets require more processing power and may affect performance.
 Face Detection Limitations:
 Faces should be clear and front-facing for optimal recognition accuracy.
 
-🤝 Contributions
+#### 🤝 Contributions
 Contributions are welcome! To contribute to the project:
 
 Fork the repository.
@@ -167,10 +212,10 @@ Copiar código
 git push origin feature/your-feature-name
 Open a pull request.
 
-📜 License
+#### 📜 License
 This project is open-source and available under the MIT License.
 
-🙌 Acknowledgements
+#### 🙌 Acknowledgements
 Face Recognition library by Adam Geitgey for simplifying facial recognition tasks.
 OpenCV for enabling real-time video processing and easy integration with Python.
 
