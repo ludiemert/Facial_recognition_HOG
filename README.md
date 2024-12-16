@@ -1,35 +1,80 @@
-🧑‍💻 Face Recognition System with Webcam
-This project combines face recognition techniques using the face_recognition library and OpenCV to implement a real-time face recognition system. The system is designed to detect faces in images and video feeds, encode their unique facial features, and compare them for recognition, creating an efficient face identification system.
+### 🧑‍💻 Face Recognition System with Webcam
 
-🚀 Features
-Real-Time Face Detection:
-Captures live video feed from the webcam to detect faces in real-time.
+ - This project combines face recognition techniques using the face_recognition library and OpenCV to implement a real-time face recognition system. The system is designed to detect faces in images and video feeds, encode their unique facial features, and compare them for recognition, creating an efficient face identification system.
 
-Facial Encoding:
-Encodes faces from images stored in the Pessoas (People) folder into a unique numeric representation for easy comparison.
+---
 
-Face Comparison:
-Compares faces detected through the webcam against pre-encoded faces in the database to check for similarities.
+<h4 align="center">Face Detection - img_FR_HOG 🚀</h4>
 
-Visual Overlay:
-Displays a rectangle around detected faces and shows the name of the recognized individual on the video feed.
+<div align="center">
+    <table>
+        <tr>
+            <td style="width: 50%; text-align: center;">
+                <img src="img_Facial_recognition/img_FR_HOG/2_rectangle_imgElon.png" style="width: 90%;" alt="2_rectangle_imgElon">
+                <p style="margin-top: 5px;">img_FR_HOG - rectangle_imgElon </p>
+            </td>
+            <td style="width: 50%; text-align: center;">
+                <img src="img_Facial_recognition/img_FR_HOG/5_compare_faces_false.png" style="width: 90%;" alt="5_compare_faces_false">
+                <p style="margin-top: 5px;">img_FR_HOG - compare_faces_false </p>
+            </td>
+        </tr>
+    </table>
+</div>
 
-Simple & Effective:
-Easy-to-use Python script for real-time face recognition, suitable for learning and practical applications.
+  <br/>
+  <br/>
+---
 
-🛠️ Technologies Used
-This project uses the following libraries:
 
-OpenCV:
-For capturing the live webcam feed and drawing shapes (e.g., rectangles) on the images or video.
+---
 
-face_recognition:
-A library that simplifies facial recognition tasks like face detection, encoding, and comparison.
+<h4 align="center">Face Detection - img_FR_HOG 🚀</h4>
 
-os:
-To manage file paths and interact with the directory structure containing images.
+<div align="center">
+    <table>
+        <tr>
+            <td style="width: 50%; text-align: center;">
+                <img src="img_Facial_recognition/img_FR_HOG/5_compare_faces_true.png" style="width: 90%;" alt="01 - schema.prisma - and-conection_Progress">
+                <p style="margin-top: 5px;">img_FR_HOG - compare_faces_true </p>
+            </td>
+            <td style="width: 50%; text-align: center;">
+                <img src="img_Facial_recognition/img_FR_HOG/6_face_distance_0.73_false.png" style="width: 90%;" alt="6_face_distance_0.73_false">
+                <p style="margin-top: 5px;">img_FR_HOG - face_distance_0.73_false</p>
+            </td>
+        </tr>
+    </table>
+</div>
 
-🖥️ Installation Guide
+  <br/>
+  <br/>
+---
+
+
+
+#### 🚀 Features
+
+ - Real-Time Face Detection: Captures live video feed from the webcam to detect faces in real-time.
+
+  - Facial Encoding: Encodes faces from images stored in the Pessoas (People) folder into a unique numeric representation for easy comparison.
+
+ - Face Comparison: Compares faces detected through the webcam against pre-encoded faces in the database to check for similarities.
+
+ - Visual Overlay: Displays a rectangle around detected faces and shows the name of the recognized individual on the video feed.
+
+ - Simple & Effective: Easy-to-use Python script for real-time face recognition, suitable for learning and practical applications.
+
+#### 🛠️ Technologies Used
+
+ - This project uses the following libraries:
+
+ - OpenCV: For capturing the live webcam feed and drawing shapes (e.g., rectangles) on the images or video.
+
+ - face_recognition: A library that simplifies facial recognition tasks like face detection, encoding, and comparison.
+
+ - os: To manage file paths and interact with the directory structure containing images.
+
+#### 🖥️ Installation Guide
+
 Clone the repository:
 
 bash
