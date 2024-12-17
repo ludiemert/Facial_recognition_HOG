@@ -1,12 +1,51 @@
-Here’s the enriched README in English:
+## 💻🚀 Real-Time Face Recognition with Webcam
 
-markdown
-Copiar código
-# Real-Time Face Recognition with Webcam
-
-This project implements a **real-time face recognition system** using Python and OpenCV. By leveraging the `face_recognition` library, the application detects faces through a webcam feed and compares them with pre-encoded images stored in a directory.
+ - This project implements a **real-time face recognition system** using Python and OpenCV.
+ - By leveraging the `face_recognition` library, the application detects faces through a webcam feed and compares them with pre-encoded images stored in a directory.
 
 ---
+
+<h4 align="center">Face Detection - img_project_fr_realtime 🚀</h4>
+
+<div align="center">
+    <table>
+        <tr>
+            <td style="width: 50%; text-align: center;">
+                <img src="01_list_encoders.png" style="width: 90%;" alt="01_list_encoders">
+                <p style="margin-top: 5px;"> img_project_fr_realtime - 01_list_encoders </p>
+            </td>
+            <td style="width: 50%; text-align: center;">
+                <img src="1_test_finsh_project_fr_realtime.png" style="width: 90%;"      alt="1_test_finsh_project_fr_realtime">
+                <p style="margin-top: 5px;"> img_project_fr_realtime - img_FR_HOG - 1_test_finsh_project_fr_realtime </p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+  <br/>
+  <br/>
+
+<h4 align="center">Face Detection - img_project_fr_realtime 🚀</h4>
+
+<div align="center">
+    <table>
+        <tr>
+            <td style="width: 50%; text-align: center;">
+                <img src="2_nome_sem_extensao.png" style="width: 90%;" alt="2_nome_sem_extensao">
+                <p style="margin-top: 5px;">img_project_fr_realtime - 2_nome_sem_extensao </p>
+            </td>
+            <td style="width: 50%; text-align: center;">
+                <img src="2_test_finsh_project_fr_realtime.png" style="width: 90%;" alt="2_test_finsh_project_fr_realtime">
+                <p style="margin-top: 5px;">img_project_fr_realtime - 2_test_finsh_project_fr_realtime</p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+  <br/>
+  <br/>
+
+  ---- 
 
 ## 🚀 Features
 
@@ -34,18 +73,22 @@ This project uses the following Python libraries:
    ```bash
    git clone https://github.com/your-repository/face-recognition-realtime.git
    cd face-recognition-realtime
+   ```
+   
 Install required dependencies: Make sure you have Python 3.7+ installed. Then, run:
+  ```bash
+ pip install opencv-python face-recognition
+  ```
 
-bash
-Copiar código
-pip install opencv-python face-recognition
-Prepare the Pessoas directory:
 
-Create a folder named Pessoas in the project root.
-Add images of people to the folder. The filenames should be the person's name (e.g., John.jpg).
-📂 Directory Structure
-bash
-Copiar código
+ - Prepare the Pessoas directory:
+
+ - Create a folder named Pessoas in the project root.
+ - Add images of people to the folder. The filenames should be the person's name (e.g., John.jpg).
+
+#### 📂 Directory Structure
+
+ ```bash
 face-recognition-realtime/
 │
 ├── main.py               # Main Python file for the project
@@ -54,58 +97,69 @@ face-recognition-realtime/
 │   ├── Elon.jpg
 │   └── ...
 └── README.md             # Project documentation
-▶️ How to Run
+ ```
+
+#### ▶️ How to Run
 Run the script:
 
-bash
-Copiar código
+ ```bash
 python main.py
-Allow the script to access your webcam. It will:
+ ```
 
-Resize the live video feed for performance optimization.
-Detect faces in real-time and compare them with pre-encoded faces.
-Display the recognized person's name and bounding box on the screen.
-Press q to exit the program.
+- Allow the script to access your webcam. It will:
 
-📝 Code Overview
+ - Resize the live video feed for performance optimization.
+ - Detect faces in real-time and compare them with pre-encoded faces.
+ - Display the recognized person's name and bounding box on the screen.
+ - Press q to exit the program.
+
+#### 📝 Code Overview
+
 1. Encoder Creation (criarEncoders)
 Iterates through all images in the Pessoas directory.
 Converts images to RGB format (as required by face_recognition).
 Generates encodings for each face and stores them alongside the corresponding name.
+
 2. Webcam Face Comparison (compararWebcam)
 Captures real-time video feed using OpenCV.
 Detects faces in each frame, resizing for performance.
 Compares live face encodings to pre-existing encodings.
 Displays the matching name and bounding box on the video feed.
-🔧 Customization
-Tolerance Adjustment: Modify the tolerance parameter in the fr.compare_faces function to make face matching stricter or more lenient.
-Add More Images: Include more images in the Pessoas directory for larger datasets.
-Adjust Performance: Optimize frame resizing for better balance between speed and accuracy.
-🛡️ Limitations and Recommendations
-Lighting Conditions: Performance may vary in poor lighting or extreme angles.
-Dataset Size: Larger datasets may require more processing power.
-Face Detection Limitations: Ensure that faces in images are clear and front-facing for optimal results.
-🤝 Contributing
+
+#### 🔧 Customization
+ - Tolerance Adjustment: Modify the tolerance parameter in the fr.compare_faces function to make face matching stricter or more lenient.
+ - Add More Images: Include more images in the Pessoas directory for larger datasets.
+ - Adjust Performance: Optimize frame resizing for better balance between speed and accuracy.
+
+#### 🛡️ Limitations and Recommendations
+ - Lighting Conditions: Performance may vary in poor lighting or extreme angles.
+ - Dataset Size: Larger datasets may require more processing power.
+ - Face Detection Limitations: Ensure that faces in images are clear and front-facing for optimal results.
+
+#### 🤝 Contributing
+
+ ```bash
 Fork the repository.
 Create a new branch:
-bash
-Copiar código
+
 git checkout -b feature/your-feature-name
 Commit your changes:
-bash
-Copiar código
+
 git commit -m "Add your feature description"
 Push to the branch:
-bash
-Copiar código
+
+
 git push origin feature/your-feature-name
 Open a pull request.
-📜 License
-This project is open-source and available under the MIT License.
 
-🙌 Acknowledgements
-Inspired by the Face Recognition library by Adam Geitgey.
-Thanks to OpenCV for enabling real-time video processing.
+ ```
+
+##### 📜 License
+ - This project is open-source and available under the MIT License.
+
+##### 🙌 Acknowledgements
+ - Inspired by the Face Recognition library by Adam Geitgey.
+ - Thanks to OpenCV for enabling real-time video processing.
 
 
 ### 📦 Contribution
