@@ -4,6 +4,49 @@ This project uses the [face_recognition](https://github.com/ageitgey/face_recogn
 
 ---
 
+
+<h4 align="center">Face Detection - img_FR_HOG 🚀</h4>
+
+<div align="center">
+    <table>
+        <tr>
+            <td style="width: 50%; text-align: center;">
+                <img src="2_rectangle_imgElon.png" style="width: 90%;" alt="2_rectangle_imgElon">
+                <p style="margin-top: 5px;">img_FR_HOG - rectangle_imgElon </p>
+            </td>
+            <td style="width: 50%; text-align: center;">
+                <img src="5_compare_faces_false.png" style="width: 90%;" alt="5_compare_faces_false">
+                <p style="margin-top: 5px;">img_FR_HOG - compare_faces_false </p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+  <br/>
+  <br/>
+
+
+<h4 align="center">Face Detection - img_FR_HOG 🚀</h4>
+
+<div align="center">
+    <table>
+        <tr>
+            <td style="width: 50%; text-align: center;">
+                <img src="5_compare_faces_true.png" style="width: 90%;" alt="01 - schema.prisma - and-conection_Progress">
+                <p style="margin-top: 5px;">img_FR_HOG - compare_faces_true </p>
+            </td>
+            <td style="width: 50%; text-align: center;">
+                <img src="6_face_distance_0.73_false.png" style="width: 90%;" alt="6_face_distance_0.73_false">
+                <p style="margin-top: 5px;">img_FR_HOG - face_distance_0.73_false</p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+  <br/>
+  <br/>
+
+
 ## 🛠️ Features
 
 - **Face Detection**  
@@ -41,117 +84,110 @@ pip install opencv-python face_recognition
 Directory Structure
 Ensure the files are organized as follows:
 
-bash
-Copiar código
+```bash
 face-recognition-project/
 ├── Elon.jpg           # Original test image
 ├── ElonTest.jpg       # Second test image for similarity check
 ├── face_recognition.py # Main project script
 └── README.md          # This file
-Running the Script
-Clone the repository to your local environment:
+```
 
-bash
-Copiar código
-git clone https://github.com/your-username/face-recognition-project.git
+#### Running the Script
+ - Clone the repository to your local environment:
+
+```bash
+git clone https://github.com/ludiemert/Facial_recognition_HOG.git
 cd face-recognition-project
 Ensure the images (Elon.jpg and ElonTest.jpg) are in the same directory as the script.
+```
 
 Run the script:
 
-bash
-Copiar código
+```bash
 python face_recognition.py
 The following outputs will be displayed:
+```
 
-Images with face detection (green rectangles).
-Facial similarity results (True or False).
-Facial distance between the images.
-🧪 Code Explanation
+ - Images with face detection (green rectangles).
+ - Facial similarity results (True or False).
+ - Facial distance between the images.
+
+
+#### 🧪 Code Explanation
 The program follows these steps:
 
-Image Loading and Conversion:
+ - Image Loading and Conversion:
 
-The images are loaded and converted to the RGB format for analysis using the face_recognition library.
-Face Detection:
+ - The images are loaded and converted to the RGB format for analysis using the face_recognition library.
+ - Face Detection:
 
-The face_locations() function returns the coordinates of the detected face.
-Facial Encoding:
+ - The face_locations() function returns the coordinates of the detected face.
+ - Facial Encoding:
 
-The unique features of the face are extracted using face_encodings(), creating a numerical representation with 128 measurements.
-Comparison and Distance:
+ - The unique features of the face are extracted using face_encodings(), creating a numerical representation with 128 measurements.
+ - Comparison and Distance:
 
-The compare_faces() function checks if the faces are similar.
-The face_distance() function calculates a distance metric between the encodings.
-Display Results:
+ - The compare_faces() function checks if the faces are similar.
+ - The face_distance() function calculates a distance metric between the encodings.
+ - Display Results:
 
-The images are displayed with the faces highlighted, and the comparison results are shown in the console.
-Example console output:
+ - The images are displayed with the faces highlighted, and the comparison results are shown in the console.
+ - Example console output:
 
-bash
-Copiar código
+```bash
 [True] [0.4567]
-📊 Expected Results
-A smaller distance (e.g., distance < 0.6) indicates greater similarity between the faces.
-The comparison function (True/False) indicates whether the images contain the same detected face.
-Project Visualization
-After running the script, two windows will pop up showing the analyzed images:
+```
 
-Original Image (Elon.jpg):
-The face will be highlighted with a green rectangle.
+#### 📊 Expected Results
+ - A smaller distance (e.g., distance < 0.6) indicates greater similarity between the faces.
+ - The comparison function (True/False) indicates whether the images contain the same detected face.
+ - Project Visualization
+ - After running the script, two windows will pop up showing the analyzed images:
 
-Test Image (ElonTest.jpg):
-The same processing will be applied to highlight the face and compare it with the original image.
+ - Original Image (Elon.jpg):
+ - The face will be highlighted with a green rectangle.
 
-🔍 Graphic Demonstration
-Original Image:
+ - Test Image (ElonTest.jpg):
+ - The same processing will be applied to highlight the face and compare it with the original image.
 
-Test Image:
+#### 🔍 Graphic Demonstration
 
-🛡️ Possible Improvements
-Support for multiple faces in an image.
-Add a graphical interface for dynamic image uploads.
-Implement support for video (real-time detection).
-Support saving results in a JSON file or database.
-🤝 Contributions
+ - Original Image:
+
+ - Test Image:
+
+#### 🛡️ Possible Improvements
+ - Support for multiple faces in an image.
+ - Add a graphical interface for dynamic image uploads.
+ - Implement support for video (real-time detection).
+ - Support saving results in a JSON file or database.
+
+
+#### 🤝 Contributions
 Contributions are welcome! Follow the steps below to contribute:
 
-Fork the repository.
+ - Fork the repository.
+ - Create a branch for your feature or fix:
 
-Create a branch for your feature or fix:
-
-bash
-Copiar código
+```bash
 git checkout -b my-feature
 Commit your changes:
 
-bash
-Copiar código
+
 git commit -m "My new feature"
 Push to the branch:
 
-bash
-Copiar código
+
 git push origin my-feature
 Open a Pull Request in the original repository.
+```
 
-📄 License
-This project is licensed under the MIT License.
+#### 📄 License
+ - This project is licensed under the MIT License.
 
-📧 Contact
-If you have questions or suggestions, feel free to reach out:
+#### 📧 Contact
+ - If you have questions or suggestions, feel free to reach out:
 
-Author: Your Name
-Email: your-email@domain.com
-vbnet
-Copiar código
-
-### **What’s New in the English Version?**
-1. Direct translation of the content while ensuring clarity and technical accuracy.
-2. Adjusted formatting to fit an international audience.
-3. Maintained all critical sections such as prerequisites, setup, results, and contributions.
-
-Feel free to replace placeholders like `your-username` and `your-email` with your actual information.
 
 
 ### 📦 Contribution
