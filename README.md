@@ -171,53 +171,56 @@ Compares the live face encodings with pre-encoded faces from the Pessoas folder.
 Displays the name and draws a bounding box around the face on the live feed.
 
 #### 🔧 Customization
-Tolerance Adjustment:
-Adjust the tolerance parameter in the fr.compare_faces function to fine-tune face matching sensitivity.
+ - Tolerance Adjustment:
+ - Adjust the tolerance parameter in the fr.compare_faces function to fine-tune face matching sensitivity.
 
-Add More Images:
-Add more images to the Pessoas folder to increase the recognition database.
+ - Add More Images:
+ - Add more images to the Pessoas folder to increase the recognition database.
 
 Performance Optimization:
 Modify the frame resizing parameters for a balance between speed and accuracy in face detection.
 
 #### 🛡️ Limitations and Recommendations
-Lighting Conditions:
-The recognition performance may vary under poor lighting or when faces are at extreme angles.
+ - Lighting Conditions:
+ - The recognition performance may vary under poor lighting or when faces are at extreme angles.
 
-Dataset Size:
+ - Dataset Size:
 Larger datasets require more processing power and may affect performance.
 
-Face Detection Limitations:
+ - Face Detection Limitations:
 Faces should be clear and front-facing for optimal recognition accuracy.
 
 #### 🤝 Contributions
 Contributions are welcome! To contribute to the project:
 
-Fork the repository.
+ - Fork the repository.
 
 Create a new branch:
 
-bash
-Copiar código
+```python
 git checkout -b feature/your-feature-name
-Commit your changes:
+```
+- Commit your changes:
 
-bash
-Copiar código
+```python
 git commit -m "Add your feature description"
-Push your branch:
+```
 
-bash
-Copiar código
+```python
+Push your branch:
+```
+
+```python
 git push origin feature/your-feature-name
 Open a pull request.
+```
 
 #### 📜 License
-This project is open-source and available under the MIT License.
+ - This project is open-source and available under the MIT License.
 
 #### 🙌 Acknowledgements
-Face Recognition library by Adam Geitgey for simplifying facial recognition tasks.
-OpenCV for enabling real-time video processing and easy integration with Python.
+ - Face Recognition library by Adam Geitgey for simplifying facial recognition tasks.
+ - OpenCV for enabling real-time video processing and easy integration with Python.
 
 
 ### 📦 Contribution
