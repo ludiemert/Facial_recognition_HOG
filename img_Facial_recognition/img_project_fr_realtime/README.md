@@ -71,7 +71,7 @@ This project uses the following Python libraries:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-repository/face-recognition-realtime.git
+   git clone https://github.com/ludiemert/Facial_recognition_HOG.git
    cd face-recognition-realtime
    ```
    
